@@ -8,7 +8,7 @@ Sort it the way you want. Either linearly or by playing with the curve. To get p
 
 Online at
 
-[https://oraclex.zonenow.io/](https://oraclex.zonenow.io/)
+[https://zonenow.io/oraclex/](https://zonenow.io/oraclex/)
 
 
 ## Local Development
@@ -31,6 +31,6 @@ Run server
     $ $(cd server ; python server2.py)
 
 
-Connect to [http://localhost:8235/oraclex/](https://oraclex.zonenow.io/)  
+Connect to [http://localhost:8235/oraclex/](https://zonenow.io/oraclex/)  
 
 Credit: Base of project from Sort Your Music project [https://github.com/plamere/SortYourMusic](https://github.com/plamere/SortYourMusic)
