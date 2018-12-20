@@ -9,7 +9,7 @@ from flask import Flask, jsonify, Blueprint, request
 
 APP_HOST='0.0.0.0'
 APP_PORT=8235
-DEFAULT_PREFIX='/SortYourMusic'
+DEFAULT_PREFIX='/oraclex'
 STATIC_PATH='./static'
 PLYVEL_PATH='./songdata'
 CACHE_ERR_EXPIRE=600.0 # time until retry erroring pyen requests
@@ -26,9 +26,9 @@ def page_not_found(e):
 # Song Information
 # ========================================================================
 
-@app.before_request
-def open_pyen():
-    flask.g.pyen = pyen.Pyen()
+# @app.before_request
+# def open_pyen():
+#     # flask.g.pyen = pyen.Pyen()
 
 def normalise_tid(tid):
     return tid if tid.startswith('spotify:track') else "spotify:track:%s"%(tid)
@@ -37,10 +37,10 @@ def get_song_info(tid):
     tid = normalise_tid(tid)
 
     try:
-        response = flask.g.pyen.get('song/profile', 
+        response = flask.g.pyen.get('song/profile',
             track_id = tid,
             bucket=['audio_summary', 'song_hotttnesss', 'artist_hotttnesss'])
-        
+
         if response['status']['code'] != 0:
             raise pyen.PyenException(response['message'])
 
@@ -158,17 +158,17 @@ def get_multi_song_info(tids):
 # ========================================================================
 
 # use a blueprint so we can use the url_prefix /SortYourMusic without prepending all routes
-sort_your_music = Blueprint('sort_your_music', __name__, static_folder=STATIC_PATH, static_url_path='')
+oraclex = Blueprint('oraclex', __name__, static_folder=STATIC_PATH, static_url_path='')
 
-@sort_your_music.route('/')
+@oraclex.route('/')
 def index():
-    return sort_your_music.send_static_file('index.html')
+    return oraclex.send_static_file('index.html')
 
-@sort_your_music.route('/info')
+@oraclex.route('/info')
 def info():
     return jsonify(get_cache_info())
 
-@sort_your_music.route('/songs')
+@oraclex.route('/songs')
 def songs():
     tids_s = request.args.get('ids')
     tids = tids_s.split(',') if tids_s else []
@@ -178,7 +178,7 @@ def songs():
         'time': processing_time
     })
 
-app.register_blueprint(sort_your_music, url_prefix=DEFAULT_PREFIX)
+app.register_blueprint(oraclex, url_prefix=DEFAULT_PREFIX)
 
 
 # Main

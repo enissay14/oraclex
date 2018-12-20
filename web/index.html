@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link type="text/css" href="styles.css" rel="stylesheet" />
+    <link type="text/css" href="simpletextextractor.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" type="text/css"
     href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css"> -->
     <link href="dist/sp-bootstrap.min.css" rel="stylesheet" media="screen">
@@ -14,7 +15,7 @@
     href="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.png">
-    <title>Sort Your Music</title>
+    <title>OracleX</title>
     <!-- Custom styles for this template -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,29 +28,28 @@
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
-            <span class="navbar-logo">Spotify</span>
-            <span class="navbar-title">Sort Your Music</span>
+            <!-- <span class="navbar-logo">Spotify</span> -->
+            <span class="navbar-title">OracleX</span>
+            <span class="navbar-title">Music to Flow</span>
           </a>
         </div>
-        <div class="navbar-collapse collapse">
+        <!-- <div class="navbar-collapse collapse">
           <a href="http://www.spotify.com" class="btn btn-primary navbar-btn navbar-right">Get
           Spotify</a>
-        </div><!--/.navbar-collapse -->
+        </div><!--/.navbar-collapse --> -->
       </div>
     </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
       <div id='intro'>
-      <div id='main' class="top worker jumbotron jumbotron-hero container-fluid">
+      <div id='main' class="top worker jumbotron jumbotron-hero container-fluid" style="margin-top: 65px;">
           <div  id="jumbo-dialog">
-            <h1 id='ttitle' >Sort Your Music</h1>
+            <h1 id='ttitle' >Understand <span class="rotate">Your Music.,Your State., You.</span></h1>
+            <h3 id='ttitle' >“Without Music, life would be a mistake” - Friedrich Nietzsche</span></h1>
             <p id='ttext'>
-                Sort your Spotify playlists by any of 
-                a wide range of musical attributes such as tempo, loudness, 
-                valence, energy, danceability, popularity and more. Now with
-                <b>Filters</b>!
+                Explore your playlists to understand how and why it affects your state. Change attributes such as the tempo, energy and danceability.
             </p>
-            <p>  Login with your Spotify account to get started</p>
+            <!-- <p>  Login with your Spotify account to get started</p> -->
             <p><a class="btn btn-primary btn-lg" id='go' role="button">Login with Spotify</a></p>
           </div>
       </div>
@@ -57,24 +57,26 @@
         <div class="container worker ">
           <div class="row features">
              <div class="col-md-offset-2 col-md-8">
-                    <h2 class="text-center">Get your playlists in order</h2>
+                    <h2 class="text-center">
+                      <span class="rotate">Relaxed, Upbeat, Focussed</span> on demand?</h2>
                     <p>
-                    With <b> Sort Your Playlists </b> you can easily order the songs
-                    in any of your playlists be a wide range of parameters. Just
+                    With <b> OracleX </b> Order the songs in any of your playlists by a wide range of parameters
+                     such as putting the beats per minute between 140-180 to get you upbeat and ready for exercise! Just
                     follow these steps:
                     </p>
                     <ol>
-                        <li> <b> Login </b> with your Spotify credentials 
+                        <li> <b> Login </b> with your Spotify credentials
                         <li> <b> Pick </b> your playlist
                         <li> <b> Sort </b> the playlist by clicking on the column headings in
                         the playlist table
                         <li>  <b> Save </b> the sorted playlist to Spotify
+                        <li>Tap into the power of <b>Music</b>
                     </ol>
 
-                    <h2 class="text-center">Tap into the power of The Echo Nest</h2>
+                    <h2 class="text-center">Harness the power of Music</h2>
                     <p>
-                    <b> Sort Your Music </b> lets you sort your playlist
-                    based on a number of Echo Nest song attributes including:
+                    The attributes of your songs will help you to understand why the playlist is making you “feel” that way…
+                    So you can get to that feeling or state gain, <b> quicker </b> .
                     </p>
 
                     <ol>
@@ -95,145 +97,204 @@
                         <li> <b> Popularity </b> - The higher the value the more
                         popular the song is.
                     </ol>
-
-                    <h2 class="text-center">FAQ</h2>
-                    <p>
-                        Here are some answers to questions about <b> Sort Your
-                        Music </b>
-                    </p>
-                    <ol>
-                        <li> <b> How was this built? </b> This was created using
-                        the <a
-                        href="http://developer.spotify.com">Spotify</a> API.
-
-                        <li> <b> Where can I learn more about the Echo Nest song
-                        attributes?</b> See <a
-                        href="http://developer.echonest.com/acoustic-attributes.html">
-                        Acoustic Attributes Overview </a>
-                        <li> <b> Can you add more attributes to the app?  </b>
-                        Yes, but it is a tradeoff between display space,
-                        complexity and utility. Let me know which attributes
-                        you'd like to see.
-                        <li> <b> Any more features planned?</b> - Yes, I'd like
-                        to add a few more features such as:
-                            <ul>
-                                <li> Duplicate track removal
-                                <li> Manual reordering, addition, and deletion.
-                            </ul>
-                        If you have any ideas for new feature, let me know.
-                        <li> <b> Is the source available</b> - Yes, you can find
-                        it on <a href="https://github.com/plamere/SortYourMusic">github</a>
-                        <li> <b> Does Sort Your Music overwrite my playlist when
-                            I save?</b> - 
-                            No, it creates a copy of the playlist. The new
-                            playlist is called 'Old playlist name sorted by
-                            increasing X', where X is what you sorted the
-                            playlist on. Note that an older version of the app
-                            did overwrite your playlists, but some folks didn't
-                            like that.
-                    </ol>
-              </div> 
+              </div>
           </div>
         </div>
 
-      <div class="top jumbotron container-fluid">
-          <p id='info' class="text-center"></p>
+        <!-- Overlay for fixed sidebar -->
+        <div class="sidebar-overlay"></div>
 
-          <div class="worker" id='playlists'> 
-                <h2 class="prompt" > Pick a playlist: </h2>
-                <img class='spinner' width='100' alt='spinner' src='images/ajaxSpinner.gif'>
+        <!-- Material sidebar -->
+        <aside id="sidebar" class="sidebar sidebar-default sidebar-stacked" role="navigation" style="margin-top: 80px;">
+            <!-- Sidebar header -->
+            <div class="sidebar-header header-cover" style="background-image: url(http://www.uidownload.com/files/390/350/393/dark-blue-music-background-vector-thumb.jpg);">
+                <!-- Top bar -->
+                <div class="top-bar"></div>
+                <!-- Sidebar toggle button -->
+                <button type="button" class="sidebar-toggle">
+                    <i class="icon-material-sidebar-arrow"></i>
+                </button>
 
-                <div class="panel panel-default">
-                    <table id='playlist-list' class="table">
-                        <thead>
-                            <tr>
-                            <th>Name</th>
-                            <th>Track Count</th>
-                            <th>Owner</th>
-                            </tr>
-                        </thead>
-                        <tbody> </tbody>
-                    </table>
+                <div class="container">
+                    <div id="result"></div>
                 </div>
-          </div>
 
-          <div class="worker" id='single-playlist'> 
-                <h2> <a id='playlist-title'></a> </h2>
-                <img class='spinner2' width='100' alt='spinner' src='images/ajaxSpinner.gif'>
-                <div id='single-playlist-contents'>
-
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-
-                            <div class='btn-group pull-right'>
-                              <button id='save' type='button' class='btn btn-primary btn-sm has-spinner'><i class="fa fa-spinner fa-spin"></i> Save New Playlist</button>
-                              <button id='saveDropdown' type='button' class='btn btn-primary btn-sm dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                                <span class='caret'></span>
-                                <span class='sr-only'>Toggle Dropdown</span>
-                              </button>
-                              <ul class='dropdown-menu'>
-                                <li><a id='dropSave' href='#'>Save New Playlist</a></li>
-                                <li><a id='dropOverwrite' href='#'>Overwrite Playlist</a></li>
-                              </ul>
-                            </div>
-
-                            <a class="btn btn-primary btn-sm pull-left" id='pick'
-                                role="button">back</a>
-                        </div>
+                <script id="result-template" type="text/x-handlebars-template">
+                  <div class="row">
+                    <div class="sidebar-image">
+                      <img class="avatar" alt="avatar" style="width: 60px;" src="{{images.0.url}}">
                     </div>
-
-                    <div class="panel panel-default">
-                        <!-- <div class="panel-heading">Filter</div> -->
-                        <div class="panel-body">
-                            <div class="form-inline">
-                                <div class="form-group">
-                                    <label for="min-bpm">Minimum BPM</label>
-                                    <input id="min-bpm" type="number" class="form-control" placeholder="0">
-                                </div>
-                                <div class="form-group">
-                                    <label for="max-bpm">Maximum BPM</label>
-                                    <input id="max-bpm" type="number" class="form-control" placeholder="1000">
-                                </div>
-                                <div class="form-group">
-                                    <label for="include-double">Include Doubled BPM</label>
-                                    <input id="include-double" type="checkbox" checked="checked">
-                                </div>
-                                <!-- <button id="filter-button" class="btn btn-default btn-sm">Filter</button> -->
-                            </div>
-                        </div>
+                    <div >
+                      <p data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown" style="text-align: left;margin: 10px;">Hi, <a href="{{external_urls.spotify}}" target="_blank">{{display_name}}</a>
+                      <b class="caret"></b></p>
                     </div>
+                  </div>
+                </script>
 
-                    <table id='song-table' class="hover table table-condensed table-bordered table-striped">  
-                        <thead>
-                            <tr>
-                                <th> # </th>
-                                <th> Title </th>
-                                <th> Artist </th>
-                                <th> Release</th>
-                                <th> BPM </th>
-                                <th> Energy </th>
-                                <th> Dance </th>
-                                <th> Loud </th>
-                                <th> Valence </th>
-                                <th> Length </th>
-                                <th> Acoustic </th>
-                                <th> Pop. </th>
-                            </tr>
-                        </thead>
-                        <tbody> </tbody>
-                        <tfoot> </tfoot>
-                    </table>
+                <!-- Sidebar brand image -->
+                <!-- <div class="sidebar-image">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53474/atom_profile_01.jpg">
+                </div> -->
+                <!-- Sidebar brand name -->
+                <!-- <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+                    john.doe@gmail.com
+                    <b class="caret"></b>
+                </a> -->
+            </div>
+
+            <!-- Sidebar navigation -->
+            <ul class="nav sidebar-nav">
+                <li class="dropdown">
+                    <ul id="settings-dropdown" class="dropdown-menu">
+                        <li>
+                            <a href="#" tabindex="-1">
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" tabindex="-1">
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" tabindex="-1">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" tabindex="-1">
+                                Exit
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <div class="sidebar-text">Your Playlists</div>
+                <div class="container worker" id='playlists'>
+                      <!-- <h2 class="prompt" > We've loaded all your Spotify playlists. Choose one to find out more about yourself: </h2> -->
+                      <img class='spinner' width='100' alt='spinner' src='images/ajaxSpinner.gif'>
+
+                      <div class="panel panel-default" style="width: 460px;">
+                          <table id='playlist-list' class="table">
+                              <thead>
+                                  <tr>
+                                  <!-- <th>Name</th> -->
+                                  <!-- <th>Track Count</th>
+                                  <th>Owner</th> -->
+                                  </tr>
+                              </thead>
+                              <tbody> </tbody>
+                          </table>
+                      </div>
                 </div>
+
+        </aside>
+
+        <div class="wrapper">
+            <!-- Sidebar Constructor -->
+            <div class="constructor">
+              <p><button class="btn btn-primary btn-sm sidebar-toggle" style="margin-top: 100px;margin-bottom: 10px;">Hide Playlists</button></p>
+              <div class="top jumbotron container-fluid">
+
+                <p id='info' class="text-center"></p>
+
+                <div class="container worker" id='single-playlist'>
+                      <h2> <a id='playlist-title'></a> </h2>
+                      <img class='spinner2' width='100' alt='spinner' src='images/ajaxSpinner.gif'>
+                      <div id='single-playlist-contents'>
+
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h2>Playlist Profile</h2>
+                              <p>Each one of these songs in this playlist is represented by a color. The overall shape illustrates the sound profile of this playlist.</p>
+                              <div class="radarChart2"></div>
+                            </div>
+                            <div class="col-md-6" >
+                              <!-- <select onChange="updateHistogram(this.value);">
+                                <option value="0">acousticness</option>
+                                <option value="1">energy</option>
+                                <option value="2">instrumentalness</option>
+                                <option value="3">liveliness</option>
+                                <option value="4">speechiness</option>
+                                <option value="5">valence</option>
+                              </select> -->
+                              <h2 id="titlegraph"></h2>
+                              <p id="descriptiongraph"></p>
+                              <button id='curve_it' type='button' class='btn btn-primary btn-sm has-spinner'><i class="fa fa-spinner fa-spin"></i> Curve It!</button>
+                              <div class="graph"></div>
+                            </div>
+                          </div>
+                          <!-- <div class="container">
+                            <div class="graph"></div>
+                          </div> -->
+                          <div class="panel panel-default">
+                              <div class="panel-heading">Filter</div>
+                              <div class="container" style="margin-top: 20px;">
+                              <li>Click on a song to play it (1 click - some may not work)</p>
+                              <li> Click on a heading to reorder by attribute (e.g  tempo, danceability)</p>
+                              </div>
+                              <div class="panel-body">
+                                  <div class="form-inline">
+                                    <!-- <a class="btn btn-primary btn-sm pull-left" id='pick'
+                                        role="button">back</a> -->
+                                      <div class="form-group" style="margin-left:30px">
+                                          <label for="min-bpm">Minimum BPM</label>
+                                          <input id="min-bpm" type="number" class="form-control" placeholder="0">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="max-bpm">Maximum BPM</label>
+                                          <input id="max-bpm" type="number" class="form-control" placeholder="1000">
+                                      </div>
+                                      <!-- <div class="form-group">
+                                          <label for="include-double">Include Doubled BPM</label>
+                                          <input id="include-double" type="checkbox" checked="checked">
+                                      </div> -->
+                                      <button id="filter-button" class="btn btn-default btn-sm">Filter</button>
+                                      <div class='btn-group pull-right'>
+                                        <button id='save' type='button' class='btn btn-primary btn-sm has-spinner'><i class="fa fa-spinner fa-spin"></i> Save New Playlist</button>
+                                        <button id='saveDropdown' type='button' class='btn btn-primary btn-sm dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                                          <span class='caret'></span>
+                                          <span class='sr-only'>Toggle Dropdown</span>
+                                        </button>
+                                        <ul class='dropdown-menu'>
+                                          <li><a id='dropSave' href='#'>Save New Playlist</a></li>
+                                          <li><a id='dropOverwrite' href='#'>Overwrite Playlist</a></li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <table id='song-table' class="hover table table-condensed table-bordered table-striped">
+                              <thead>
+                                  <tr>
+                                      <th> # </th>
+                                      <th> Title </th>
+                                      <th> Artist </th>
+                                      <th> Release</th>
+                                      <th> BPM </th>
+                                      <th> Energy </th>
+                                      <th> Dance </th>
+                                      <th> Loud </th>
+                                      <th> Valence </th>
+                                      <th> Length </th>
+                                      <th> Acoustic </th>
+                                      <th> Pop. </th>
+                                  </tr>
+                              </thead>
+                              <tbody> </tbody>
+                              <tfoot> </tfoot>
+                          </table>
+                      </div>
+                </div>
+            </div>
+            </div>
           </div>
-        </div>
     </div>
 
     <div id="footer">
       <div class="container text-center">
             <p class="text-muted">
-                Powered by <a href="http://spotify.com">Spotify</a>
-                Created by <a href="http://twitter.com/plamere">@plamere</a>
-                with contributions by <a href="http://twitter.com/sonneveld">@sonneveld</a>.
+                Powered by <a href="http://spotify.com">Spotify</a>.
             </p>
       </div>
     </div>
@@ -250,6 +311,11 @@
     <script type="text/javascript" charset="utf-8"
         src="//cdnjs.cloudflare.com/ajax/libs/q.js/1.4.1/q.min.js"></script>
     <script src="config.js"></script>
+    <script src="simplerotator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+		<script src="https://d3js.org/d3-path.v1.min.js" charset="utf-8"></script>
+    <script src="radarChart.js"></script>
 
 <script>
 "use strict";
@@ -264,6 +330,27 @@ var cols = [
     'danceability', 'loudness', 'valence', 'duration',
     'acousticness', 'popularity'
 ];
+var values = [[],[],[],[],[],[],[],[],[],[],[]];
+var dataset = {};
+var CURVED = false;
+// var values_indexes = {
+//     BPM: 4,
+//     energy: 5,
+//     danceability:6,
+//     loudness:7,
+//     valence:8,
+//     duration:9,
+//     acousticness:10,
+//     popularity:11,
+//     instrumentalness:12,
+//     liveness:13,
+//     speechiness:14
+// };
+// console.log(values_indexes);
+
+if(document.URL.indexOf('localhost') >=0){
+  var SPOTIFY_REDIRECT_URI = 'http://localhost:8235/oraclex/';
+}
 
 // disable save while loading and saving, no matter what the saved state
 var forceDisableSave = false;
@@ -287,7 +374,8 @@ function info(msg) {
 
 function authorizeUser() {
     var scopes = 'playlist-read-private playlist-modify-private playlist-modify-public';
-
+    console.log("Spotify Client Id" + SPOTIFY_CLIENT_ID);
+    console.log("Spotify Redirect URL" + SPOTIFY_REDIRECT_URI);
     var url = 'https://accounts.spotify.com/authorize?client_id=' + SPOTIFY_CLIENT_ID +
         '&response_type=token' +
         '&scope=' + encodeURIComponent(scopes) +
@@ -359,7 +447,7 @@ function callSpotifyQ(type, url, json) {
                     reject(textStatus);
                 }
             }
-        });  
+        });
     });
 }
 
@@ -410,7 +498,8 @@ function showPlaylists() {
 }
 
 function fetchSinglePlaylist(playlist) {
-    $(".worker").hide();
+
+    // $(".worker").hide();
     $("#single-playlist").show();
     $("#single-playlist-contents").hide();
     $(".spinner2").show();
@@ -498,6 +587,284 @@ function updateTable(tracks) {
     $(".spinner2").hide();
 }
 
+function updateGraph(index){
+
+  var graphs = d3.selectAll(".graphline")
+           .remove()
+           .exit()
+           .data(dataset);
+
+  drawGraph(index, CURVED);
+}
+
+function reOrderBell(){
+  CURVED = !CURVED;
+  if(CURVED) $("#curve_it").text("Linear");
+  if(!CURVED) $("#curve_it").text("Curve it!");
+  var firstOrder = [];
+  var selectedTableOrder = songTable.order();
+  if (selectedTableOrder.length >= 1) {
+      firstOrder = _.clone(selectedTableOrder[0]); // object is reused by datatable!
+  }
+  updateGraph(firstOrder);
+}
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+function drawGraph(firstOrder, curved){
+    var tmp = values[Math.max(firstOrder[0]-4,0)];
+
+    if(firstOrder[0]  != 0){
+      if(firstOrder[1] == 'asc'){
+        if(!curved){
+          tmp.sort(function(a, b){return a-b});
+        }else{
+          // var inex = tmp.indexOf((Math.max.apply(Math, tmp)-Math.min.apply(Math, tmp))/2);
+          tmp.sort(function(a, b){return a-b});
+          var index75 = 3*(tmp.length/4);
+          var temp1 = tmp.slice(0,index75);
+          var temp2 = tmp.slice(index75);
+          temp1 = shuffle(temp1);
+          var indexMiddlw =temp1.length/2;
+          var p1 = temp1.slice(0,indexMiddlw);
+          var p2 = temp1.slice(indexMiddlw);
+          p1.sort(function(a, b){return a-b});
+          p2.sort(function(a, b){return b-a});
+          temp1 = p2.concat(p1);
+          tmp = temp1.concat(temp2);
+        }
+      }
+      if(firstOrder[1] == 'desc'){
+        if(!curved){
+          tmp.sort(function(a, b){return b-a});
+        }else{
+          tmp.sort(function(a, b){return b-a});
+          var index75 = 3*(tmp.length/4);
+          var temp1 = tmp.slice(0,index75);
+          var temp2 = tmp.slice(index75);
+          temp1 = shuffle(temp1);
+          var indexMiddlw =temp1.length/2;
+          var p1 = temp1.slice(0,indexMiddlw);
+          var p2 = temp1.slice(indexMiddlw);
+          p1.sort(function(a, b){return b-a});
+          p2.sort(function(a, b){return a-b});
+          temp1 = p2.concat(p1);
+          tmp = temp1.concat(temp2);
+        }
+      }
+    }
+
+
+    // The number of datapoints
+    var n = tmp.length;
+    dataset = d3.range(n).map(function(d) {return {"y": tmp[d]}});
+
+    // 2. Use the margin convention practice
+    var margin = {top: 50, right: 150, bottom: 50, left: 50}
+      , width = 600 - margin.left - margin.right // Use the window's width
+      , height = 300 - margin.top - margin.bottom; // Use the window's height
+
+    // 5. X scale will use the index of our data
+    var xScale = d3.scaleLinear()
+        .domain([0, n-1]) // input
+        .range([0, width]); // output
+
+    // 6. Y scale will use the randomly generate number
+
+
+    var yScale = d3.scaleLinear()
+        .domain([Math.min(...tmp), Math.max(...tmp)]) // input
+        .range([height, 0]); // output
+
+    // 7. d3's line generator
+    var line = d3.line()
+        .x(function(d, i) { return xScale(i); }) // set the x values for the line generator
+        .y(function(d) { return yScale(d.y); }) // set the y values for the line generator
+        .curve(d3.curveMonotoneX) // apply smoothing to the line
+
+    // 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
+    // console.log(d3.range(n).map(function(d) { return {"y": d3.randomUniform(1)() } }));
+
+    // 1. Add the SVG to the page and employ #2
+    var svg = d3.select(".graph").append("svg")
+        .attr("class", "graphline")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+    // 3. Call the x axis in a group tag
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
+
+    // 4. Call the y axis in a group tag
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
+
+    // 9. Append the path, bind the data, and call the line generator
+    svg.append("path")
+        .datum(dataset) // 10. Binds data to the line
+        .attr("class", "line") // Assign a class for styling
+        .attr("d", line); // 11. Calls the line generator
+
+    // 12. Appends a circle for each datapoint
+    svg.selectAll(".dot")
+        .data(dataset)
+      .enter().append("circle") // Uses the enter().append() method
+        .attr("class", "dot") // Assign a class for styling
+        .attr("cx", function(d, i) { return xScale(i) })
+        .attr("cy", function(d) { return yScale(d.y) })
+        .attr("r", 5);
+
+}
+
+function updateHistogram(index) {
+  var bars = d3.selectAll(".bar")
+           .remove()
+           .exit()
+           .data(values[index]);
+  drawHistogram(index);
+}
+
+function drawHistogram(index){
+
+  var formatCount = d3.format(",.0f");
+
+   var margin = {
+      top: 50,
+      right: 30,
+      bottom: 50,
+      left: 100
+    },
+    width = 600 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
+
+   var x = d3.scaleLinear()
+    .rangeRound([0, width]);
+
+   var binsT = d3.histogram()
+    .domain(x.domain())
+    .thresholds(x.ticks(20))
+    (values[index]);
+
+   var binsN = d3.histogram()
+    .domain(x.domain())
+    .thresholds(5)
+    (values[index]);
+
+   var bins = binsN;
+
+   var y = d3.scaleLinear()
+    .domain([0, d3.max(bins, function(d) {
+      return d.length;
+    })])
+    .range([height, 0]);
+
+   d3.select(".chart").selectAll('*').remove();
+
+   var svg = d3.select(".chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+   var bar = svg.selectAll(".bar")
+    .data(bins)
+    .enter().append("g")
+    .attr("class", "bar")
+    .attr("transform", function(d) {
+      return "translate(" + x(d.x0) + "," + y(d.length) + ")";
+    });
+
+   bar.append("rect")
+    .attr("x", 1)
+    .attr("width", x(bins[0].x1) - x(bins[0].x0) - 1)
+    .attr("height", function(d) {
+      return height - y(d.length);
+    });
+
+   bar.append("text")
+    .attr("dy", ".75em")
+    .attr("y", 6)
+    .attr("x", (x(bins[0].x1) - x(bins[0].x0)) / 2)
+    .attr("text-anchor", "middle")
+    .text(function(d) {
+      return formatCount(d.length);
+    });
+
+   svg.append("g")
+    .attr("class", "axis axis--x")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x));
+}
+
+function drawRadarChart(tracks, trackF){
+    //RadarChart
+  //////////////////////////////////////////////////////////////
+  //////////////////////// Set-Up //////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+  var acoustics = _.map(trackF, function(elm, indx) {
+    // var tmp = _.pick(elm, 'acousticness','danceability','duration_ms','energy','instrumentalness','liveness', 'loudness', 'speechiness','tempo','valence');
+    var tmp = _.pick(elm, 'acousticness','energy','instrumentalness','liveness', 'speechiness','valence');
+    var res = [];
+
+    Object.keys(tmp).forEach(function(key,index) {
+        // key: the name of the object key
+        // index: the ordinal position of the key within the object
+        res.push({'axis': key, 'value': tmp[key]});
+    });
+    return {name: tracks.items[indx].track.name, axes: res};
+   });
+
+
+  var margin = { top: 30, right: 80, bottom: 50, left: 50 },
+    width = Math.min(400, window.innerWidth / 4) - margin.left - margin.right,
+    height = Math.min(width, window.innerHeight - margin.top - margin.bottom);
+
+  //////////////////////////////////////////////////////////////
+  ////////////////////////// Data //////////////////////////////
+  //////////////////////////////////////////////////////////////
+  var data = acoustics;
+
+  //////////////////////////////////////////////////////////////
+  ///// Second example /////////////////////////////////////////
+  ///// Chart legend, custom color, custom unit, etc. //////////
+  //////////////////////////////////////////////////////////////
+  var radarChartOptions2 = {
+    w: 250,
+    h: 300,
+    margin: margin,
+    levels: 6,
+    roundStrokes: false,
+    format: '.0f'
+  };
+
+  // Draw the chart, get a reference the created svg element :
+  let svg_radar2 = RadarChart(".radarChart2", data, radarChartOptions2);
+}
+
 function addTrack(table,track) {
     if (track && track.enInfo && 'tempo' in track.enInfo) {
         var relDate = '';
@@ -505,8 +872,8 @@ function addTrack(table,track) {
             relDate = albumDates[track.album.id];
         }
         table.row.add([
-                track.which + 1, 
-                track.name, 
+                track.which + 1,
+                track.name,
                 track.artists[0].name,
                 relDate,
                 Math.round(track.enInfo.tempo),
@@ -522,8 +889,8 @@ function addTrack(table,track) {
         ]);
     } else {
         table.row.add([
-                track.which + 1, 
-                track.name, 
+                track.which + 1,
+                track.name,
                 track.artists[0].name,
                 '',
                 '',
@@ -550,7 +917,7 @@ function fetchPlaylistTracks(playlist) {
             var aids = [];
 
             tracks = data.tracks ? data.tracks : data;
-            console.log('tracks', tracks);
+
             _.each(tracks.items, function(item, i) {
                 if (item.track) {
                     item.track.which = curPlaylist.tracks.items.length;
@@ -607,11 +974,33 @@ function fetchPlaylistTracks(playlist) {
             });
             updateTable(tracks);
 
+            //get popularity
+            var popularity = [];
+            _.each(tracks.items, function(item, i) {
+                if (item.track) {
+                    popularity.push(item.track.popularity);
+                }
+            });
+
+            values[0] = trackFeatures.map(a => a.tempo);
+            values[1] = trackFeatures.map(a => a.energy);
+            values[2] = trackFeatures.map(a => a.danceability);
+            values[3] = trackFeatures.map(a => a.loudness);
+            values[4] = trackFeatures.map(a => a.valence);
+            values[5] = trackFeatures.map(a => a.duration_ms);
+            values[6] = trackFeatures.map(a => a.acousticness);
+            values[7] = popularity;
+            values[8] = trackFeatures.map(a => a.instrumentalness);
+            values[9] = trackFeatures.map(a => a.liveness);
+            values[10] = trackFeatures.map(a => a.speechiness);
+
+            drawHistogram(0);
+            drawRadarChart(tracks,trackFeatures);
             if (tracks.next) {
                 return fetchLoop(tracks.next);
             }
         })
-        
+
     }
 
     // Spotify API defect? specifying limit will actually return up to 100 items anyway.
@@ -621,9 +1010,9 @@ function fetchPlaylistTracks(playlist) {
 }
 
 function fetchPlaylists(uid, callback) {
-    $("#playlist-list tbody").empty();
-    $(".prompt").hide();
-    $(".spinner").show();
+    // $("#playlist-list tbody").empty();
+    // $(".prompt").hide();
+    // $(".spinner").show();
 
     info("Getting your playlists");
     var url = 'https://api.spotify.com/v1/users/' + uid + '/playlists';
@@ -658,13 +1047,14 @@ function playlistLoaded(playlists) {
     $(".spinner").hide();
     if (playlists) {
         info("");
+        fetchSinglePlaylist(playlists.items[0]);
         _.each(playlists.items, function(playlist) {
             if (goodPlaylist(playlist)) {
                 var tr = $("<tr>");
 
                 var tdName = $("<td>")
 
-                var aName = $("<a>")
+                var aName = $("<p>")
                     .text(playlist.name)
                     .addClass('hoverable')
                     .on('click', function() {
@@ -672,13 +1062,13 @@ function playlistLoaded(playlists) {
                     });
                 tdName.append(aName);
 
-                var tdTrackCount = $("<td>").text(playlist.tracks.total);
+                // var tdTrackCount = $("<td>").text(playlist.tracks.total);
 
-                var tdOwner = $("<td>").text(formatOwner(playlist.owner));
+                // var tdOwner = $("<td>").text(formatOwner(playlist.owner));
 
                 tr.append(tdName);
-                tr.append(tdTrackCount);
-                tr.append(tdOwner);
+                // tr.append(tdTrackCount);
+                // tr.append(tdOwner);
 
                 pl.append(tr);
             }
@@ -709,7 +1099,7 @@ function playlistFilter( settings, data, dataIndex ) {
     var includeDouble = $('#include-double').is(':checked');
     var bpm = parseFloat( data[4] ) || 0;
 
-    return inRange(bpm, minBpm, maxBpm) || 
+    return inRange(bpm, minBpm, maxBpm) ||
         (includeDouble && inRange(bpm*2, minBpm, maxBpm));
 }
 
@@ -769,7 +1159,7 @@ function saveTidsToPlaylist(playlist, tids, replace) {
     var sliceLength = 100;
     var this_tids = tids.slice(0, sliceLength);
     var remaining = tids.slice(sliceLength);
-    var url = "https://api.spotify.com/v1/users/" + playlist.owner.id + 
+    var url = "https://api.spotify.com/v1/users/" + playlist.owner.id +
          "/playlists/" + playlist.id + '/tracks';
     var type;
     var json;
@@ -786,7 +1176,7 @@ function saveTidsToPlaylist(playlist, tids, replace) {
     .then(function() {
         if (remaining.length > 0) {
             return saveTidsToPlaylist(playlist, remaining, false);
-        } 
+        }
     })
     .catch(function() {
         return Q.reject("Trouble saving tracks to the playlist");
@@ -805,7 +1195,14 @@ function createPlaylist(owner, name, isPublic) {
 function createOrReusePlaylist(playlist, createNewPlaylist) {
     if (createNewPlaylist) {
         var sortName = getCurSortName();
-        return createPlaylist(curUserID, playlist.name + " sorted by " + sortName, playlist.public);
+        console.log(CURVED)
+        if(CURVED){
+          console.log( playlist.name + " sorted by " + sortName + " (curved)")
+          return createPlaylist(curUserID, playlist.name + " sorted by " + sortName + " (curved)", playlist.public);
+        }else{
+          console.log( playlist.name + " sorted by " + sortName)
+          return createPlaylist(curUserID, playlist.name + " sorted by " + sortName , playlist.public);
+        }
     } else {
         return Q(playlist);
     }
@@ -835,11 +1232,15 @@ function getPlaylistState() {
         firstOrder = _.clone(selectedTableOrder[0]); // object is reused by datatable!
     }
 
-    return { 
+    updateGraph(firstOrder);
+
+    $('#titlegraph').text("Playlist " + cols[Math.max(firstOrder[0],4)]);
+    $('#descriptiongraph').text("This graphs shows how the " + cols[Math.max(firstOrder[0],4)] + " changes through the playlist. You can change it by sorting the table bellow (Click on the columns heading).");
+    return {
         minBpm: parseInt( $('#min-bpm').val(), 10 ),
         maxBpm: parseInt( $('#max-bpm').val(), 10 ),
         includeDouble: $('#include-double').is(':checked'),
-        order: firstOrder,
+        order: firstOrder
     };
 }
 
@@ -853,10 +1254,12 @@ function isSavable() {
 
 function setNeedsSave(state) {
     if (state) {
+        $("#curve_it").attr('disabled', false);
         $("#save,#saveDropdown").attr('disabled', false);
         $("#save,#saveDropdown").removeClass('btn-warning');
         $("#save,#saveDropdown").addClass('btn-primary');
     } else {
+        $("#curve_it").attr('disabled', true);
         $("#save,#saveDropdown").attr('disabled', true);
         $("#save,#saveDropdown").addClass('btn-warning');
         $("#save,#saveDropdown").removeClass('btn-primary');
@@ -924,6 +1327,10 @@ $(document).ready(
         songTable = initTable();
         var args = parseArgs();
 
+        // profile data
+        var templateSource = document.getElementById('result-template').innerHTML,
+        template = Handlebars.compile(templateSource),
+        resultsPlaceholder = document.getElementById('result');
 
         if ('error' in args) {
             error("Sorry, I can't read your playlists from Spotify without authorization");
@@ -936,14 +1343,19 @@ $(document).ready(
             $(".worker").hide();
             fetchCurrentUserProfile(function(user) {
                 if (user) {
+                    resultsPlaceholder.innerHTML = template(user);
                     curUserID = user.id;
                     $("#who").text(user.id);
                     loadPlaylists(user.id);
+                    var sidebar = $('#sidebar');
+                    sidebar.toggleClass('open');
                 } else {
                     error("Trouble getting the user profile");
                 }
             });
         } else {
+            $("#sidebar").hide();
+            $(".wrapper").hide();
             $("#go").show();
             $("#go").on('click', function() {
                 authorizeUser();
@@ -953,6 +1365,9 @@ $(document).ready(
         $("#save,#dropSave").on('click', function() {
             savePlaylist(curPlaylist, true);
         });
+        $("#curve_it").on('click', function(){
+          reOrderBell();
+        })
         $("#dropOverwrite").on('click', function() {
             savePlaylist(curPlaylist, false);
         });
@@ -966,8 +1381,134 @@ $(document).ready(
             songTable.draw();
             updateSaveButtonState();
         });
+
+        $(".rotate").textrotator({
+          animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+          separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+          speed: 2000 // How many milliseconds until the next word show.
+        });
+
+        var overlay = $('.sidebar-overlay');
+
+       $('.sidebar-toggle').on('click', function() {
+           $('.sidebar-toggle').html("Hide Playlists");
+           var sidebar = $('#sidebar');
+           sidebar.toggleClass('open');
+           if(sidebar.hasClass('open')){
+             $('.sidebar-toggle').html("Hide Playlists");
+           }else{
+             $('.sidebar-toggle').html("Show Playlists");
+           }
+
+
+           if ((sidebar.hasClass('sidebar-fixed-left') || sidebar.hasClass('sidebar-fixed-right')) && sidebar.hasClass('open')) {
+                console.log("addClass")
+               overlay.addClass('active');
+
+           } else {
+               console.log("removeClass")
+               overlay.removeClass('active');
+
+           }
+       });
+
+       overlay.on('click', function() {
+           $(this).removeClass('active');
+           $('#sidebar').removeClass('open');
+       });
+
+       var sidebar = $('#sidebar');
+      var sidebarHeader = $('#sidebar .sidebar-header');
+      var sidebarImg = sidebarHeader.css('background-image');
+      var toggleButtons = $('.sidebar-toggle');
+
+    // Hide toggle buttons on default position
+    // toggleButtons.css('display', 'none');
+    $('body').css('display', 'table');
+
+
+    // Sidebar position
+    $('#sidebar-position').change(function() {
+        var value = $( this ).val();
+        sidebar.removeClass('sidebar-fixed-left sidebar-fixed-right sidebar-stacked').addClass(value).addClass('open');
+        if (value == 'sidebar-fixed-left' || value == 'sidebar-fixed-right') {
+            $('.sidebar-overlay').addClass('active');
+        }
+        // Show toggle buttons
+        if (value != '') {
+            toggleButtons.css('display', 'initial');
+            $('body').css('display', 'initial');
+        } else {
+            // Hide toggle buttons
+            toggleButtons.css('display', 'none');
+            $('body').css('display', 'table');
+        }
+    });
+
+    // Sidebar theme
+    $('#sidebar-theme').change(function() {
+        var value = $( this ).val();
+        sidebar.removeClass('sidebar-default sidebar-inverse sidebar-colored sidebar-colored-inverse').addClass(value)
+    });
+
+    // Header cover
+    $('#sidebar-header').change(function() {
+        var value = $(this).val();
+
+        $('.sidebar-header').removeClass('header-cover').addClass(value);
+
+        if (value == 'header-cover') {
+            sidebarHeader.css('background-image', sidebarImg)
+        } else {
+            sidebarHeader.css('background-image', '')
+        }
+    });
+
+
+
     }
 );
+
+(function($) {
+    var dropdown = $('.dropdown');
+
+    // Add slidedown animation to dropdown
+    dropdown.on('show.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    // Add slideup animation to dropdown
+    dropdown.on('hide.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    });
+})(jQuery);
+
+
+
+(function(removeClass) {
+
+	jQuery.fn.removeClass = function( value ) {
+		if ( value && typeof value.test === "function" ) {
+			for ( var i = 0, l = this.length; i < l; i++ ) {
+				var elem = this[i];
+				if ( elem.nodeType === 1 && elem.className ) {
+					var classNames = elem.className.split( /\s+/ );
+
+					for ( var n = classNames.length; n--; ) {
+						if ( value.test(classNames[n]) ) {
+							classNames.splice(n, 1);
+						}
+					}
+					elem.className = jQuery.trim( classNames.join(" ") );
+				}
+			}
+		} else {
+			removeClass.call(this, value);
+		}
+		return this;
+	}
+
+})(jQuery.fn.removeClass);
 
 </script>
 

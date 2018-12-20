@@ -1,44 +1,36 @@
 
-# Sort Your Music
+# OracleX
 
-A web app that lets you sort your music.
+A web app that lets you sort your music .
+Explore your playlists to understand how and why it affects your state. Change attributes such as the tempo, energy and danceability.
+Sort it the way you want. Either linearly or by playing with the curve. To get puped up, slow down a bit first, then again sort by increasing energy!
+
 
 Online at
 
-[http://static.echonest.com/SortYourMusic](http://static.echonest.com/SortYourMusic)
+[https://oraclex.zonenow.io/](https://oraclex.zonenow.io/)
 
 
 ## Local Development
 
-The following section describes how to develop Sort Your Music locally. It requires an Echo Nest and Spotify API key.
+The following section describes how to develop OracleX locally. It requires a Spotify API key.
 
 Install leveldb
 
     $ brew install leveldb
 
-Install requirements for API server (optionally setup virtualenv first):
+Install requirements for API server:
 
     $ pip install -r server/requirements.txt
 
-Configure application keys for Echo Nest and Spotify, either export manually:
 
-    export SPOTIPY_CLIENT_ID=...
-    export SPOTIPY_CLIENT_SECRET=...
-    export SPOTIPY_REDIRECT_URI=http://...
-    export ECHO_NEST_API_KEY=...
-
-or copy projenv.example, modify it, then source it:
-
-    $ . projenv
-
-Edit web/config.js to point to localhost and update Spotify client id.
+Edit web/config.js to update SPOTIFY_CLIENT_ID and SPOTIFY_REDIRECT_URI.
 
 Run server
 
     $ $(cd server ; python server2.py)
 
-Optionally warm up server cache with top 1000 artists (this may take some time):
 
-    $ $(cd server ; python warm.py)
+Connect to [http://localhost:8235/oraclex/](https://oraclex.zonenow.io/)  
 
-Connect to [http://localhost:8235/SortYourMusic/](http://static.echonest.com/SortYourMusic)
+Credit: Base of project from Sort Your Music project [https://github.com/plamere/SortYourMusic](https://github.com/plamere/SortYourMusic)
